@@ -1,0 +1,243 @@
+/*HEADER*/
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    background-color: rgb(255, 255, 240);
+    
+}
+.header{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    background-image: url(img/ramo6.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 700px;
+    background-size: cover;
+    /*opacity: 0.9;*/
+    animation: imagenes 15s ease infinite ;
+    animation-delay: 2s;
+}
+@keyframes imagenes{
+    0%{
+        background-image: url(img/ramo6.jpg);
+    }
+    25%{
+        background-image: url(img/rosa3.jpg);
+        
+    }
+    50%{
+        background-image: url(img/ramo5.jpg);
+        
+    }
+    100%{
+        background-image: url(img/ramo6.jpg);
+    }
+}
+.barra-navegacion{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 80%;
+    padding: 50px;
+}
+.lista-primera{
+    display: flex;
+    list-style: none;
+}
+.lista-izquierda{
+    align-items: center;
+    display: flex;
+    margin-left: 0;
+    margin-right: 26px;
+    position: relative;
+}
+.lista-segunda{
+    display: flex;
+    list-style: none;
+}
+.lista-derecha{
+    align-items: center;
+    display: flex;
+    margin-left: 30px;
+    margin-right: 0px;
+    position: relative;
+}
+.listas-letras{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: x-large;
+}
+.listas-letras-comprar{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: x-large;
+    border: 2px solid #ffffff;
+    border-radius: 100px;
+    padding: 12px 16px 14px;
+    transition: all .3s ease;
+}
+
+.listas-letras:hover{
+    border-bottom: 3px solid white;
+}
+.listas-letras-comprar:hover{
+    background-color: white;
+    color: black;
+}
+
+/*--------------*/
+
+/*MAIN*/
+
+/*1parde de main*/
+.caja-origen-dahlia{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5.2631578947%;
+    padding-right: 5.2631578947%;
+    position: relative;
+    z-index: 1;
+}
+.origen-dahlia{
+    padding: 68px;
+}
+.img-origen{
+    margin: 0%;
+    padding:0% ;
+}
+.parrafo-origen{
+    font-family:"Trebuchet MS", Helvetica, sans-serif ;
+    font-size: 45px;
+    line-height: 120%;
+    color: rgb(167, 98, 156);
+    align-items: center;
+    margin: 60px;
+}
+.boton-sobre-nosotros{
+    align-items: center;
+    align-self: center;
+    border: 3px solid rgb(167, 98, 156);
+    border-radius: 100px;
+    display: inline-flex;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 22px;
+    letter-spacing: 1px;
+    line-height: 1.25;
+    padding: 17px 24px 18px 27px;
+    text-transform: uppercase;
+    background-color: rgb(255, 255, 240);
+}
+.boton-sobre-nosotros:hover{
+    background-color: rgb(167, 98, 156);
+    color: #ffffff;
+}
+a{
+    text-decoration: none;
+}
+/*---------------*/
+
+/*2da parte main (productos)*/
+.caja-todo-productos{
+    padding: 68px;
+}
+.caja-contenedor-productos{
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+.caja-flex{
+    align-items: flex-start;
+    column-count: 2;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    height: 1374.42px;
+}
+
+.titulo-productos{
+    position: absolute;
+    left: 0%;
+    top: 0px;
+}
+.titulo{
+    font-size: 80px;
+    line-height: 90%;
+    font-family: fantasy;
+}
+
+.titulo-flores{
+    color: #fff;
+    display: block;
+    font-family: brick-text-extralight;
+    font-size: 52px;
+    left: 50%;
+    line-height: 92%;
+    padding-left: 68px;
+    padding-right: 68px;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    transition: all .3s cubic-bezier(.165,.84,.44,1);
+    width: 100%;
+    z-index: 2;
+}
+
+.img-diseño-producto{
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.link-rosas{
+    position: absolute;
+    left: 60%;
+    top: 0px;
+    margin-top: 47px;
+}
+.contenedor-img-rosas{
+    height: 0;
+    overflow: hidden;
+    position: relative;
+    width: 400px;
+    padding-bottom: 130%;
+}
+
+.img-rosa{
+    left: 0%;
+    top: 0%;
+    width: 100%;
+}
+
+.link-lirio{
+    position: absolute;
+    left: 0%;
+    top: 343.906px;
+}
+
+.contenedor-img-lirio{
+    height: 0;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding-bottom: 66.6667%;
+}
+.img-lirio{
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}

@@ -153,6 +153,8 @@ a{
 .caja-todo-productos{
     padding: 108px;
     padding-bottom: 108px;
+    padding-left: 85px;
+    padding-right: 85px;
 }
 .caja-contenedor-productos{
     border: 0;
@@ -160,8 +162,8 @@ a{
     font: inherit;
     margin: 0;
     padding: 0;
-    vertical-align: baseline;
 }
+
 .caja-flex{
     align-items: flex-start;
     column-count: 2;
@@ -178,9 +180,15 @@ a{
     position: absolute;
     left: 0%;
     top: 0px;
+    margin-top: 85px;
+    padding-left: 5.2631578947%;
+    width: 52.6315789474%;
+    /*position: absolute;
+    left: 0%;
+    top: 0px;
     margin-top: 90px;
     width: 52.6315789474%;
-    font-size: 30px;
+    font-size: 30px;*/
 }
 .titulo{
     font-size: 70px;
@@ -207,111 +215,175 @@ a{
     z-index: 2;
 }
 
+.cajas-flores{
+    box-sizing: border-box;
+    display: inline-block;
+    transition: transform .32s cubic-bezier(.165,.84,.44,1);
+    vertical-align: top;
+    width: 47.3684210526%;
+}
+
 .img-diseño-producto{
     border-radius: 20px;
     overflow: hidden;
 }
-
+/*ROSAS*/
 .link-rosas{    
     position: absolute;
-    left: 60%;
+    left: 52%;
     top: 0px;
     margin-top: 47px;
+    padding-left: 5%;
+    width: 33%;
 }
 .contenedor-img-rosas{
     height: 0;
     overflow: hidden;
     position: relative;
-    width: 400px;
+    width: 100%;
     padding-bottom: 130%;
+    
 }
 
 .img-rosa{
-    left: 0%;
-    top: 0%;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
     width: 100%;
 }
+/*-------*/
 
+/* LIRIO */
 .link-lirio{
     position: absolute;
     left: 0%;
     top: 343.906px;
+    margin-top: 40px;
+    width: 38%;
 }
 
 .contenedor-img-lirio{
-    height: 0;
     overflow: hidden;
     position: relative;
-    width: 400px;
-    padding-bottom: 100%;
+    width: 100%;
+    padding-bottom: 66.6667%;
     
 }
 .img-lirio{
     left: 0;
+    position: absolute;
     top: 0;
     width: 100%;
 }
+/*--------*/
 
+/* GIRASOL*/
 .link-girasol{
     position: absolute;
-    left: 50%;
-    top: 500.184px;
-    padding-left: 5.2631578947%;
+    left: 55%;
+    top: 500px;
+    padding-left: 5%;
+    margin-top: 200px;
+    width: 38%;
 }
 .contenedor-img-girasol{
-    margin-top: 200px;
+    padding-bottom: 80%;
+    height: 0;
     overflow: hidden;
     position: relative;
-    width: 400px;
+    width: 100%;
 }
 
 .img-girasol{
     left: 0;
+    position: absolute;
     top: 0;
     width: 100%;
 }
+/*------------*/
 
-
+/* DAHLIA*/
 .link-dahlia{
     position: absolute;
     left: 5%;
-    top: 700.648px;
+    top: 700.000px;
     margin-top: 194px;
+    width: 28%;
 }
 
 .contenedor-img-dahlia{
     height: 0;
     overflow: hidden;
     position: relative;
-    width: 400px;
+    width: 100%;   
     padding-bottom: 150%;
 }
 
 .img-dahlia{
+    height: 100%;
     left: 0;
+    position: absolute;
     top: 0;
     width: 100%;
 }
 
+/*-----------*/
 
+/*ESPECIALES*/
 .link-especiales{
-    position: absolute;
-    left: 50%;
-    top: 1200px;
-    margin-top: 121px;
-    padding: 20px;
-    
+    Position: absolute;
+    left: 38%;
+    top: 1000.00px;
+    margin-top: 130px;
+    padding-left: 10.5263157895%;
+    width: 48%;
     
 }
 
 .contenedor-img-especiales{
+    height: 0;
     overflow: hidden;
     position: relative;
-    height: 300px;
+    width: 100%;
+    padding-bottom: 66.6667%;
+    
 }
 
 .img-especiales{
     left: 0;
+    position: absolute;
     top: 0;
     width: 100%;
+}
+
+/*-------------*/
+
+/*PARALAXX*/
+.paralax-container{
+    padding-top: 108px;
+    padding-bottom: 108px;
+    padding-left: 85px;
+    padding-right: 85px;
+}
+
+.paralax{
+    background-image: url(img/paralax.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    padding: 150px;
+    border-radius: 20px;
+}
+
+.parrafo-paralax{
+    color: rgb(167, 98, 156);
+    font-family: brick-text-extralight;
+    font-size: 94px;
+    line-height: 92%;
+    padding-bottom: 30vh;
+    padding-top: 50vh;
+    height: 900px;
 }

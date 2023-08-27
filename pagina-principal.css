@@ -44,7 +44,7 @@ body{
     justify-content: space-between;
     position: relative;
     width: 80%;
-    padding: 50px;
+    padding: 4vw;
 }
 .lista-primera{
     display: flex;
@@ -108,7 +108,7 @@ body{
     z-index: 1;
 }
 .origen-dahlia{
-    padding: 68px;
+    padding: 108px;
 }
 .img-origen{
     margin: 0%;
@@ -121,6 +121,7 @@ body{
     color: rgb(167, 98, 156);
     align-items: center;
     margin: 60px;
+    text-align: center  ;
 }
 .boton-sobre-nosotros{
     align-items: center;
@@ -138,7 +139,10 @@ body{
 }
 .boton-sobre-nosotros:hover{
     background-color: rgb(167, 98, 156);
-    color: #ffffff;
+    
+}
+.boton-sobre-nosotros a:hover{
+    color: white;
 }
 a{
     text-decoration: none;
@@ -147,7 +151,8 @@ a{
 
 /*2da parte main (productos)*/
 .caja-todo-productos{
-    padding: 68px;
+    padding: 108px;
+    padding-bottom: 108px;
 }
 .caja-contenedor-productos{
     border: 0;
@@ -166,17 +171,23 @@ a{
     width: 100%;
     position: relative;
     height: 1374.42px;
+    box-sizing: border-box;
 }
 
 .titulo-productos{
     position: absolute;
     left: 0%;
     top: 0px;
+    margin-top: 90px;
+    width: 52.6315789474%;
+    font-size: 30px;
 }
 .titulo{
-    font-size: 80px;
+    font-size: 70px;
     line-height: 90%;
-    font-family: fantasy;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+    
 }
 
 .titulo-flores{
@@ -201,7 +212,7 @@ a{
     overflow: hidden;
 }
 
-.link-rosas{
+.link-rosas{    
     position: absolute;
     left: 60%;
     top: 0px;
@@ -231,13 +242,76 @@ a{
     height: 0;
     overflow: hidden;
     position: relative;
-    width: 100%;
-    padding-bottom: 66.6667%;
+    width: 400px;
+    padding-bottom: 100%;
+    
 }
 .img-lirio{
-    height: 100%;
     left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.link-girasol{
     position: absolute;
+    left: 50%;
+    top: 500.184px;
+    padding-left: 5.2631578947%;
+}
+.contenedor-img-girasol{
+    margin-top: 200px;
+    overflow: hidden;
+    position: relative;
+    width: 400px;
+}
+
+.img-girasol{
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+
+.link-dahlia{
+    position: absolute;
+    left: 5%;
+    top: 700.648px;
+    margin-top: 194px;
+}
+
+.contenedor-img-dahlia{
+    height: 0;
+    overflow: hidden;
+    position: relative;
+    width: 400px;
+    padding-bottom: 150%;
+}
+
+.img-dahlia{
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+
+.link-especiales{
+    position: absolute;
+    left: 50%;
+    top: 1200px;
+    margin-top: 121px;
+    padding: 20px;
+    
+    
+}
+
+.contenedor-img-especiales{
+    overflow: hidden;
+    position: relative;
+    height: 300px;
+}
+
+.img-especiales{
+    left: 0;
     top: 0;
     width: 100%;
 }

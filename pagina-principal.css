@@ -27,8 +27,7 @@ body{
         background-image: url(img/ramo6.jpg);
     }
     25%{
-        background-image: url(img/rosa3.jpg);
-        
+        background-image: url(img/rosa3.jpg); 
     }
     50%{
         background-image: url(img/ramo5.jpg);
@@ -151,10 +150,11 @@ a{
 
 /*2da parte main (productos)*/
 .caja-todo-productos{
-    padding: 108px;
-    padding-bottom: 108px;
-    padding-left: 85px;
-    padding-right: 85px;
+    
+    
+    display: block;
+    width: 100%;
+    position: relative;
 }
 .caja-contenedor-productos{
     border: 0;
@@ -172,7 +172,7 @@ a{
     text-align: center;
     width: 100%;
     position: relative;
-    height: 1374.42px;
+    height: 1774.42px;
     box-sizing: border-box;
 }
 
@@ -284,15 +284,19 @@ a{
 
 /* GIRASOL*/
 .link-girasol{
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    width: 37%;
+    padding-left: 5.2631578947%;
+    margin-top: 194px;
     position: absolute;
-    left: 55%;
-    top: 500px;
-    padding-left: 5%;
-    margin-top: 200px;
-    width: 38%;
+    left: 47.3634%;
+    top: 607.281px;
 }
+
 .contenedor-img-girasol{
-    padding-bottom: 80%;
+    padding-bottom: 66%;
     height: 0;
     overflow: hidden;
     position: relative;
@@ -336,13 +340,15 @@ a{
 
 /*ESPECIALES*/
 .link-especiales{
-    Position: absolute;
-    left: 38%;
-    top: 1000.00px;
-    margin-top: 130px;
-    padding-left: 10.5263157895%;
-    width: 48%;
-    
+    position: absolute;
+    left: 31.5756%;
+    top: 1222.53px;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    width: 47%;
+    margin-top: 121px;
+    padding-left: 10%;
 }
 
 .contenedor-img-especiales{

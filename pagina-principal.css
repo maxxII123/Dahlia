@@ -13,10 +13,9 @@ body{
     flex-direction: column;
     position: relative;
     width: 100%;
-    background-image: url(img/ramo6.jpg);
     background-repeat: no-repeat;
     background-position: center center;
-    height: 700px;
+    height: 800px;
     background-size: cover;
     /*opacity: 0.9;*/
     animation: imagenes 15s ease infinite ;
@@ -24,17 +23,17 @@ body{
 }
 @keyframes imagenes{
     0%{
-        background-image: url(img/ramo6.jpg);
+        background-image: url(img/tulipan3.jpg);
     }
     25%{
-        background-image: url(img/rosa3.jpg); 
+        background-image: url(img/dalias1.jpg); 
     }
     50%{
-        background-image: url(img/ramo5.jpg);
+        background-image: url(img/especiales2.jpg);
         
     }
     100%{
-        background-image: url(img/ramo6.jpg);
+        background-image: url(img/tulipan3.jpg);
     }
 }
 .barra-navegacion{
@@ -122,6 +121,7 @@ body{
     margin: 60px;
     text-align: center;
 }
+
 .boton-sobre-nosotros{
     align-items: center;
     align-self: center;
@@ -136,16 +136,16 @@ body{
     text-transform: uppercase;
     background-color: rgb(255, 255, 240);
 }
+
 .boton-sobre-nosotros:hover{
-    background-color: rgb(167, 98, 156);
-    
-}
-.boton-sobre-nosotros a:hover{
-    color: white;
+    transition: 0.5s;
 }
 a{
     text-decoration: none;
+    color: rgb(167, 98, 156);
+    
 }
+
 /*---------------*/
 
 /*2da parte main (productos)*/
@@ -183,6 +183,7 @@ a{
     margin-top: 85px;
     padding-left: 5.2631578947%;
     width: 52.6315789474%;
+    color: #141e3c;
     /*position: absolute;
     left: 0%;
     top: 0px;

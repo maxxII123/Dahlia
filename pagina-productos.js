@@ -1,4 +1,4 @@
-
+/* 
 for (let index = 0; index < 10; index++) {
     document.getElementsByClassName("container-card")[0].innerHTML+=`
 <div class="product-card">
@@ -10,3 +10,4 @@ for (let index = 0; index < 10; index++) {
 </div>`;
     
 }   
+*/

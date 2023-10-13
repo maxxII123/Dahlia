@@ -35,5 +35,14 @@ const flores = [
         img:"/img/ramo2.jpg",
         precio:845,
     },
-
 ]
+
+for (let i = 0; i < flores.length; i++) {
+    const element = flores[i];
+    document.getElementById("lista-productos").innerHTML += `
+    <div class="product-card">
+        <img src="img/ramo11.jpg" alt="ramo elegante">
+        
+        `
+    
+}

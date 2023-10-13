@@ -42,19 +42,6 @@ const flores = [
         precio: 845,
         descripcion: "Las Hortensias son simbolo de gratitud, belleza y abundancia, perfectas para demostrar cariño y gratutud a alguien.",
     },
-<<<<<<< HEAD
-]
-
-for (let i = 0; i < flores.length; i++) {
-    const element = flores[i];
-    document.getElementById("lista-productos").innerHTML += `
-    <div class="product-card">
-        <img src="img/ramo11.jpg" alt="ramo elegante">
-        
-        `
-    
-}
-=======
     {
         id: 7,
         nombre: "Lirios",
@@ -136,7 +123,7 @@ function botonMas(id) {
     mostrarCarrito();
 };
 
-function botonMenos(id) {
+function botonMenos(id)     {
     const florSeleccionada = carrito.find(flor => flor.id === id);
     florSeleccionada.cantidad -= 1;
     if (florSeleccionada.cantidad <= 0) {
@@ -155,4 +142,3 @@ function botonMenos(id) {
 
 
 
->>>>>>> 3a08eb0bde43ec9c3278115b3a367dfe0a959961

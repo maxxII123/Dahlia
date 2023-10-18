@@ -315,7 +315,7 @@ body{
 
 
 .boton-eliminar{
-    background-color: #007bff;
+    background-color: #b367c2;
     color: #fff;
     border: none;
     padding: 10px 10px;
@@ -327,10 +327,10 @@ body{
 }
 
 #qitate{
-    background-color: #2600ff;
+    background-color: #b367c2;
     color: #fff;
     border: none;
-    padding: 10px 20px;
+    padding: 5px 10px;
     border-radius: 4px;
     font-size: 18px;
     cursor: pointer;
@@ -339,15 +339,16 @@ body{
 }
 
 #agregate{
-    background-color: #2600ff;
+    background-color: #b367c2;
     color: #ffffff;
     border: none;
-    padding: 10px 20px;
+    padding: 5px 10px;
     border-radius: 4px;
     font-size: 18px;
     cursor: pointer;
     transition: background-color 0.3s;
     margin-top: 20px;
+
 }
 
 */
@@ -387,6 +388,10 @@ body{
 
 .catidad-carrito{
     padding: 1rem;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-color: #b367c2;
+    color: white;
 }
 
 .total-carrito{

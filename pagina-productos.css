@@ -189,6 +189,8 @@ body{
     padding-top: 2%;
 }
 
+
+
 #ripley{
     display: flex;
     justify-content: center;
@@ -203,10 +205,12 @@ body{
     align-content: center;
     align-items: center
 }
+
 .p-ripley{
     font-weight: bold ;
     font-size: 2em;
     color: #8a4ed1;
+    padding: 20px;
 }
 
 .img-carrito{
@@ -214,8 +218,26 @@ body{
     height: 95px;
     margin: 0 auto;
     fill: #8a4ed1;
+    padding: 20px;
 }
 
+.boton-ripley{
+    width: 100px;
+    height: 30px;
+    padding: 10px;
+}
+
+#boton-ripley{
+    border-radius: 5px;
+    background-color: #6a148e;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    padding: 0!important;
+    color: white;
+}
 
 
 .contenedor-contacto {
@@ -292,5 +314,40 @@ body{
 }
 
 
+.boton-eliminar{
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+#qitate{
+    background-color: #2600ff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+#agregate{
+    background-color: #2600ff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
 
 

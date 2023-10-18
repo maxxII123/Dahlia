@@ -77,7 +77,7 @@ for (let i = 0; i < 10; i++) {
 <h1>`+ element.nombre + `</h1>
 <p class="descripcion">` + element.descripcion + ` </p>
 <p class="precio">$<b>` + element.precio + `</p>
-<button class="buy-button" onclick="agregarAlCarrito(${element.id})">Comprar</button>
+<button class="buy-button"  onclick="agregarAlCarrito(${element.id})">Comprar</button>
 </div>`;
 
 }
@@ -90,7 +90,7 @@ function agregarAlCarrito(id) {
 }
 
 function mostrarCarrito() {
-    var carritoContainer = document.getElementById("carrito-container");
+    var carritoContainer = document.getElementById("ripley");
     carritoContainer.innerHTML = "";
 
     var total = 0;
@@ -100,8 +100,8 @@ function mostrarCarrito() {
             carritoContainer.innerHTML +=
                 `<div>${flor.nombre} - ${flor.precio} CPL
             <div>${flor.cantidad}</div>
-        <button onclick="eliminarDelCarrito(${index})">Eliminar</button>
         <button id="agregate" onclick="botonMas(${flor.id})">+</button>
+        <button class="boton-eliminar" onclick="eliminarDelCarrito(${index})">Eliminar</button>
         <button id="qitate" onclick="botonMenos(${flor.id})">-</button>
         </div>`;
         });
@@ -139,6 +139,12 @@ function botonMenos(id) {
 };
 
 
+function ocultarRipley(){
+    document.getElementById("ripley").style.display= "none";
+}
 
-
+function agregarRipley(){
+    document.getElementById("ripley").style.display= "flex";
+    
+}
 

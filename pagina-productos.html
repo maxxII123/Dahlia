@@ -29,7 +29,7 @@
             </ul>
             <ul class="lista-segunda">
                 <li class="lista-derecha">
-                    <a id="verCarrito" class="listas-letras-comprar" href="#">Comprar 🛒</a>
+                    <a onclick="agregarRipley()" id="verCarrito" class="listas-letras-comprar" href="#">Comprar 🛒</a>
                 </li>
                 <li class="lista-derecha">
                     <a class="listas-letras" href="contacto.html">Contacto</a>
@@ -77,12 +77,21 @@
     <div id="carrito-container">
 
     </div>
+
     <div id="ripley">
-                <img class="img-carrito" src="img/anadir-a-la-cesta.png" alt="">
-                <p class="p-ripley">
-                    tu carro es ta vacio 
-                </p>        
+        <div>
+            <img class="img-carrito" src="img/anadir-a-la-cesta.png" alt="">
+            <p class="p-ripley">
+                tu carro es ta vacio
+            </p>
+        </div>
+        <div class="boton-ripley">
+            <button id="boton-ripley"  onclick="ocultarRipley()">
+                cerrar
+            </button>
+        </div>
     </div>
+
 
 
 

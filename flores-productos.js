@@ -123,7 +123,7 @@ function botonMas(id) {
     mostrarCarrito();
 };
 
-function botonMenos(id) {
+function botonMenos(id)     {
     const florSeleccionada = carrito.find(flor => flor.id === id);
     florSeleccionada.cantidad -= 1;
     if (florSeleccionada.cantidad <= 0) {

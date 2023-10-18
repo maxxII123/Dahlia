@@ -111,7 +111,7 @@ function mostrarCarrito() {
                     </button>
             </div>
                 <div class="nombre-precio-producto">
-                    ${flor.imag}
+                    <img src=" ${flor.imag}" width = "50">
                     ${flor.nombre} - ${flor.precio} CPL
                 </div>
             

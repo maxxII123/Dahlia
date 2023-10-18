@@ -109,17 +109,35 @@ function mostrarCarrito() {
                     <button id="qitate" onclick="botonMenos(${flor.id})">
                         <i class="fa-solid fa-arrow-down"></i>
                     </button>
-            </div>
-                <div class="nombre-precio-producto">
-                    ${flor.imag}
-                    ${flor.nombre} - ${flor.precio} CPL
                 </div>
-            
-        <button class="boton-eliminar" onclick="eliminarDelCarrito(${index})">Eliminar</button>
+                <div class="nombre-precio-producto">
+                    <div class="img-producto-carrito">
+                        <img class="img-producto-carrito-uno" src=" ${flor.imag}" width="50" >
+                    </div>
+                    <div>
+                        <p>${flor.nombre} - ${flor.precio} CPL</p>
+                    </div>
+                </div>
+            <div class="contenedor-eliminar">
+                <button class="boton-eliminar" onclick="eliminarDelCarrito(${index})">
+                    <i class="fa-solid fa-trash-can"></i>
+                </button>
+            </div>
         </div>`;
         });
-        carritoContainer.innerHTML += `<div>Total: ${total} CPL</div>`;
 
+        carritoContainer.innerHTML += `
+                                        <div class="contenedor-total">
+                                            <div class="total-carrito">
+                                                Total:
+                                            </div>
+                                            <div class="total-carrito-dos">${total} CPL</div>
+                                        </div>
+                                        <div>
+                                            <button class="comprar-carrito">
+                                                Comprar
+                                            </button >
+                                        </div>`;
     }
 }
 

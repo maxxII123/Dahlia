@@ -313,12 +313,12 @@ body{
     padding: 20px;
 }
 
-/*
+
 .boton-eliminar{
     background-color: #007bff;
     color: #fff;
     border: none;
-    padding: 10px 20px;
+    padding: 10px 10px;
     border-radius: 4px;
     font-size: 18px;
     cursor: pointer;
@@ -352,7 +352,24 @@ body{
 
 */
 
+.img-producto-carrito-uno{
+    height: auto;
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
 
+.img-producto-carrito{
+    padding: 15px;
+}
+
+.nombre-precio-producto{
+    display: flex;
+    align-items: center;
+}
+
+.contenedor-eliminar{
+    padding: 20px;
+}
 
 .producto-carrito{
     position: relative;
@@ -366,3 +383,63 @@ body{
 .contenedor-botones-carrito{
     padding: 10px;
 }
+
+
+.catidad-carrito{
+    padding: 1rem;
+}
+
+.total-carrito{
+    float: left;
+}    
+
+
+.contenedor-total{
+    font-weight: 700;
+    color: #3c4858;
+    margin-top: .6em;
+
+
+}
+
+.total-carrito-dos{
+    float: right;
+}
+
+.comprar-carrito{
+    width: 100%;    
+    background-color: #f9a825;
+    border: none;
+    outline: none;
+    height: auto;
+    cursor: pointer;
+    transition: all .3s ease;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 40px;
+    font-size: 16px;
+    color: white;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.1);
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    clear: both;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-stretch: normal;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffffff;
+    padding: 0 1em;
+    vertical-align: middle;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+    user-select: none;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+}
+

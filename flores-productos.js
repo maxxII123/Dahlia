@@ -98,11 +98,24 @@ function mostrarCarrito() {
         carrito.forEach((flor, index) => {
             total += flor.precio * flor.cantidad;
             carritoContainer.innerHTML +=
-                `<div>${flor.nombre} - ${flor.precio} CPL
-            <div>${flor.cantidad}</div>
-        <button id="agregate" onclick="botonMas(${flor.id})">+</button>
+                `<div class="producto-carrito">
+                <div class="contenedor-botones-carrito">
+                    <button id="agregate" onclick="botonMas(${flor.id})">
+                        <i class="fa-solid fa-arrow-up"></i>
+                    </button>
+                    <div class="catidad-carrito">
+                        ${flor.cantidad}
+                    </div>
+                    <button id="qitate" onclick="botonMenos(${flor.id})">
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </button>
+            </div>
+                <div class="nombre-precio-producto">
+                    ${flor.imag}
+                    ${flor.nombre} - ${flor.precio} CPL
+                </div>
+            
         <button class="boton-eliminar" onclick="eliminarDelCarrito(${index})">Eliminar</button>
-        <button id="qitate" onclick="botonMenos(${flor.id})">-</button>
         </div>`;
         });
         carritoContainer.innerHTML += `<div>Total: ${total} CPL</div>`;
@@ -123,7 +136,7 @@ function botonMas(id) {
     mostrarCarrito();
 };
 
-function botonMenos(id)     {
+function botonMenos(id) {
     const florSeleccionada = carrito.find(flor => flor.id === id);
     florSeleccionada.cantidad -= 1;
     if (florSeleccionada.cantidad <= 0) {
@@ -139,12 +152,12 @@ function botonMenos(id)     {
 };
 
 
-function ocultarRipley(){
-    document.getElementById("ripley").style.display= "none";
+function ocultarRipley() {
+    document.getElementById("ripley").style.display = "none";
 }
 
-function agregarRipley(){
-    document.getElementById("ripley").style.display= "flex";
-    
+function agregarRipley() {
+    document.getElementById("ripley").style.display = "flex";
+
 }
 

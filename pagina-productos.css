@@ -313,7 +313,7 @@ body{
     padding: 20px;
 }
 
-
+/*
 .boton-eliminar{
     background-color: #007bff;
     color: #fff;
@@ -350,4 +350,19 @@ body{
     margin-top: 20px;
 }
 
+*/
 
+
+
+.producto-carrito{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    
+}
+
+.contenedor-botones-carrito{
+    padding: 10px;
+}

@@ -103,8 +103,10 @@ function mostrarCarrito() {
                     <button id="agregate" onclick="botonMas(${flor.id})">
                         <i class="fa-solid fa-arrow-up"></i>
                     </button>
-                    <div class="catidad-carrito">
-                        ${flor.cantidad}
+                    <div class="contenedor-carrito-cantidad">
+                        <div class="catidad-carrito">
+                            ${flor.cantidad}
+                        </div>
                     </div>
                     <button id="qitate" onclick="botonMenos(${flor.id})">
                         <i class="fa-solid fa-arrow-down"></i>
@@ -114,7 +116,7 @@ function mostrarCarrito() {
                     <div class="img-producto-carrito">
                         <img class="img-producto-carrito-uno" src=" ${flor.imag}" width="50" >
                     </div>
-                    <div>
+                    <div class="p-producto">
                         <p>${flor.nombre} - ${flor.precio} CPL</p>
                     </div>
                 </div>
@@ -171,7 +173,8 @@ function botonMenos(id) {
 
 
 function ocultarRipley() {
-    document.getElementById("ripley").style.display = "none";
+
+var maxi = document.getElementById("ripley").style.display = "none";
 }
 
 function agregarRipley() {

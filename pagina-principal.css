@@ -466,6 +466,27 @@ a{
     text-transform: uppercase;
     background-color: rgb(255, 255, 240);
 }
+
+.cacas{
+    border-radius: 20px;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 60%;
+    position: relative;
+    width: 100%;
+    background-color: aqua;
+}
+.triplecaca{
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /*CONTACTO*/
 .contenedor-contacto{
     display: flex;
